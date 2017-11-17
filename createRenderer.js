@@ -19,7 +19,7 @@ export default () => {
       return instance
     },
     toHtml: () => serializeHtml(root),
-    tearDown: () => render(<nothing />, parent, root).remove()
+    tearDown: () => render(h('nothing'), parent, root).remove()
   }
   return instance
 }
